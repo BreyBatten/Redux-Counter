@@ -19,7 +19,7 @@ const store = createStore(counter);
 // where the store "lives".
 ReactDOM.render(
   <Provider store={store}>
-    <Counter />
+    <Counter counter = {counter} />
   </Provider>,
   document.getElementById('root')
 );
